@@ -14,6 +14,22 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         home_bg: "url('/home-1.jpeg')",
       },
+      screens: {
+        xxs: "320px",
+        xs: "450px",
+      },
+
+      lineHeight: {
+        "40": "100px",
+      },
+      spacing: {
+        "85": "23rem",
+        "105": "6.563rem",
+        "90": "4.5rem",
+      },
+      fontSize: {
+        "2.5xs": "0.783rem",
+      },
       colors: {
         green: "#6EC531",
         primary: {
@@ -84,6 +100,14 @@ const config: Config = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
+      },
+      leading: {
+        "20": "780px",
+      },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
