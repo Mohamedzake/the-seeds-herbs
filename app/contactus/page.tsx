@@ -1,4 +1,4 @@
-// import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/components/ContactForm";
 import React from "react";
 
 export default function Page() {
@@ -16,7 +16,7 @@ export default function Page() {
           </div>
         </div>
       </div>{" "}
-      {/* <ContactForm /> */}
+      <ContactForm />
     </section>
   );
 }

@@ -1,3 +1,4 @@
+import ContactUs from "@/components/ContactUs";
 import React from "react";
 
 export default function Page() {
@@ -15,6 +16,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <ContactUs />
     </section>
   );
 }

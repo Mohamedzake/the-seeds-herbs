@@ -1,80 +1,87 @@
-"use client";
+import React from "react";
 
-import { useState } from "react";
-
-const ContactForm: React.FC = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log({ name, email, message });
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
-
+const ContactForm = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-white">
-      <div className="bg-dark-green text-white p-8 rounded-lg shadow-md w-full max-w-lg">
-        <h1 className="text-3xl font-bold mb-6 text-center">
-          Want To Learn More About Giza Seeds
-        </h1>
-        <form onSubmit={handleSubmit}>
-          <div className="flex space-x-4 mb-4">
-            <div className="flex-1">
-              <label htmlFor="name" className="block text-sm font-bold mb-2">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                className="block w-full p-2 border rounded-md border-gray-300  text-black focus:outline-none focus:ring-2 focus:ring-sea-green"
-                placeholder="Enter your full name"
-                required
-              />
-            </div>
-            <div className="flex-1">
-              <label htmlFor="email" className="block text-sm font-bold mb-2">
-                Email Address
-              </label>
-              <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="block w-full p-2 border rounded-md border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-sea-green"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-          </div>
-          <div className="mb-4">
-            <label htmlFor="message" className="block text-sm font-bold mb-2">
-              Message
-            </label>
-            <textarea
-              id="message"
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              className="block w-full p-2 border rounded-md border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-sea-green"
-              placeholder="Enter your message"
-              rows={4}
-              required
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-sea-green hover:bg-green-700 text-white font-bold py-2 px-4 rounded transition duration-200"
-          >
-            Submit
-          </button>
-        </form>
+    <section className="bg-accent-500 text-white px-4 py-16">
+      <div className="max-w-6xl mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-4">Welcome to Giza Seeds 🌱</h2>
+        <p className="text-lg max-w-2xl mx-auto mb-8">
+          We&apos;re excited to connect with you! If you have any questions or
+          want to learn more about our work, feel free to reach out anytime.
+        </p>
       </div>
-    </div>
+
+      {/* Contact Form and Info Section */}
+      <div
+        id="contact-form"
+        className="max-w-6xl mx-auto mt-24 grid md:grid-cols-2 gap-12 px-2 md:px-0"
+      >
+        <div>
+          <h2 className="text-3xl font-bold text-primary-green mb-6 ">
+            Send us a message
+          </h2>
+          <form className="space-y-6">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-semibold text-primary-green">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  placeholder="Enter your full name"
+                  className="w-full p-3 border border-gray-300 rounded text-black"
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold text-primary-green">
+                  Email Address
+                </label>
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full p-3 border border-gray-300 rounded text-black"
+                />
+              </div>
+            </div>
+            <div>
+              <label className="block text-sm font-semibold text-primary-green">
+                Your message
+              </label>
+              <textarea
+                placeholder="Enter your message"
+                className="w-full p-3 border border-blue-400 rounded resize-none h-28 text-black"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              className="bg-[#4E7641] px-6 py-3 rounded text-white tracking-wider hover:bg-[#3c5c31] duration-300"
+            >
+              SEND
+            </button>
+          </form>
+        </div>
+
+        <div className="bg-[#F7F9F7] p-8 rounded shadow">
+          <h3 className="text-2xl font-bold text-[#3C5C31] mb-4">Email</h3>
+          <p className="mb-6 text-black">
+            <a href="mailto:connect@gizaseeds.com" className="underline">
+              connect@gizaseeds.com
+            </a>
+          </p>
+          <h3 className="text-2xl font-bold text-[#3C5C31] mb-2">Phone</h3>
+          <p className="mb-6 text-black">
+            +(202) 38200669 / +(202) 38200673 / +(202) 38200893 / +20 1099660247
+          </p>
+          <h3 className="text-2xl font-bold text-[#3C5C31] mb-2">Address</h3>
+          <p className="mb-6 text-black">
+            6th of October City, First Industrial Zone, Giza, Egypt.12451
+          </p>
+          <button className="bg-[#4E7641] px-6 py-3 rounded text-white tracking-wider hover:bg-[#3c5c31] duration-300">
+            GET LOCATION
+          </button>
+        </div>
+      </div>
+    </section>
   );
 };
 
