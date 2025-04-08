@@ -18,7 +18,7 @@ const ContactUs = async () => {
           </h3>
         </div>
         <Link
-          href="/"
+          href="/contactus"
           className="bg-primary-green py-2 px-12 md:px-12 md:py-2 md:text-lg hover:text-green border-2 border-primary-green hover:bg-white text-white rounded-full"
         >
           Contact Us
