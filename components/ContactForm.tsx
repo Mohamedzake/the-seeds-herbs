@@ -3,8 +3,8 @@ import React from "react";
 const ContactForm = () => {
   return (
     <section className="bg-accent-500 text-white px-4 py-16">
-      <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-4">Welcome to Giza Seeds 🌱</h2>
+      <div className="max-w-6xl mx-auto text-center animate-fadeIn3D">
+        <h2 className="text-4xl font-bold mb-4 ">Welcome to Giza Seeds 🌱</h2>
         <p className="text-lg max-w-2xl mx-auto mb-8">
           We&apos;re excited to connect with you! If you have any questions or
           want to learn more about our work, feel free to reach out anytime.
