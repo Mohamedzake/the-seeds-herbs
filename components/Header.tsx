@@ -8,6 +8,7 @@ import logo from "@/public/logo.svg";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+
   const currentPath = usePathname();
 
   const menuItems = [
@@ -44,8 +45,8 @@ export default function Header() {
 
   return (
     <header
-      className={`bg-white shadow-lg fixed top-4 py-2 px-4 w-[80%] lg:w-[95%] 2xl:w-[80%] mx-auto z-50 left-0 right-0 border ${
-        isMenuOpen ? "rounded-lg" : "rounded-l-full rounded-r-full"
+      className={`bg-white shadow-lg fixed top-4 py-2 px-4 w-[100%] lg:w-[95%] 2xl:w-[80%] mx-auto z-50 left-0 right-0 border ${
+        isMenuOpen ? "rounded-lg top-0" : "rounded-l-full rounded-r-full"
       }`}
     >
       <div className="flex items-center justify-between">
@@ -59,24 +60,24 @@ export default function Header() {
           </Link>
         </div>
 
-        {/* Mobile menu toggle */}
-        <div className="block lg:hidden ps-6" onClick={toggleMenu}>
+        {/* Mobile menu button */}
+        <button onClick={toggleMenu} className="lg:hidden text-gray-700">
           <svg
-            className="w-6 h-6 cursor-pointer"
-            xmlns="http://www.w3.org/2000/svg"
+            className="w-8 h-8"
             fill="none"
-            viewBox="5 0 24 24"
             stroke="currentColor"
+            viewBox="0 0 24 24"
           >
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
+              strokeWidth={2}
+              d={
+                isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+              }
             />
           </svg>
-        </div>
-
+        </button>
         {/* Desktop nav */}
         <div className="links hidden lg:flex">
           <nav className="hidden lg:flex items-center space-x-2">
@@ -90,7 +91,7 @@ export default function Header() {
                       : "text-gray-700"
                   } hover:text-primary-green duration-200 transition-all ${
                     item.isButton
-                      ? "bg-primary-green text-white rounded-full px-6 py-2 ms-4"
+                      ? "bg-primary-green py-2 px-12 md:px-12 md:py-2 md:text-lg hover:text-green border-2 border-primary-green hover:bg-white text-white rounded-full"
                       : ""
                   }`}
                 >
@@ -130,9 +131,9 @@ export default function Header() {
                     setIsMenuOpen(false);
                   }
                 }}
-                className={`flex justify-between items-center cursor-pointer ${
+                className={`flex  justify-center items-center cursor-pointer ${
                   item.isButton
-                    ? "bg-primary-green text-white rounded-full px-6 py-2 mt-2"
+                    ? "bg-primary-green hidden py-2 px-12 md:px-12 md:py-2 md:text-lg hover:text-green border-2 border-primary-green hover:bg-white text-white rounded-full"
                     : ""
                 }`}
               >
@@ -141,6 +142,8 @@ export default function Header() {
                   className={`block w-full ${
                     currentPath === item.href
                       ? "text-primary-green font-bold"
+                      : item.isButton
+                      ? "text-white w-auto text-2xl hidden"
                       : "text-gray-700"
                   } hover:text-primary-green duration-200 transition-all py-2`}
                   onClick={() => {
@@ -151,8 +154,11 @@ export default function Header() {
                 >
                   {item.label}
                 </Link>
+
                 {item.dropdown && (
-                  <span className="text-sm text-gray-600 ml-2">˅</span>
+                  <span className="text-sm text-gray-600 flex justify-end">
+                    {activeDropdown === item.label ? "▲" : "▼"}
+                  </span>
                 )}
               </div>
 
@@ -176,6 +182,18 @@ export default function Header() {
               )}
             </div>
           ))}
+          {/* Contact Us centered */}
+          <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center w-52">
+              <Link
+                href="/contactus"
+                className="w-full bg-primary-green py-4  text-2xl hover:text-green border-2 border-primary-green hover:bg-white text-white rounded-full text-center"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Contact Us
+              </Link>
+            </div>
+          </div>
         </nav>
       )}
     </header>

@@ -49,10 +49,19 @@ const config: Config = {
         "2.5xs": "0.783rem",
       },
       colors: {
-        green: "#6EC531",
+        "dim-grey": "#4b5563",
+        "dark-olive-green": "#47723e",
+        "sea-green": "#5c9451",
+        "white-smoke": "#f6f9f6",
+        "dark-green": "#306935",
+        grey: "#939393",
+        "back-title": "#b9cab966",
+        // green: "#6EC531",
+        green: "#224a15",
         primary: {
           blue: "#232773",
-          green: "#6EC531",
+          green: "#224a15",
+          green2: "#6EC531",
           grey: {
             brands: "#F9F9F9",
             grey: "#393939",

@@ -4,6 +4,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { IBM_Plex_Sans_Arabic, IBM_Plex_Sans } from "next/font/google";
 import Footer from "@/components/Footer";
+import ContactUs from "@/components/ContactUs";
+import WhatsApp from "@/components/WhatsApp";
 const ibmPlexArabic = IBM_Plex_Sans_Arabic({
   subsets: ["arabic"],
   weight: "400",
@@ -30,8 +32,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter1.className}>
+        <WhatsApp />
         <Header />
         {children}
+        <ContactUs />
         <Footer />
       </body>
     </html>
