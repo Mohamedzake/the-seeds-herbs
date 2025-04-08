@@ -20,7 +20,7 @@ export default function Header() {
       subItems: [
         { href: "/products/seeds", label: "Seeds" },
         { href: "/products/herbs", label: "Herbs" },
-        { href: "/products/onion-garlic", label: "Onion & Garlic" },
+        // { href: "/products/onion-garlic", label: "Onion & Garlic" },
       ],
     },
     {

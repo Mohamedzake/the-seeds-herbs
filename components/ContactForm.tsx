@@ -14,7 +14,7 @@ const ContactForm = () => {
       {/* Contact Form and Info Section */}
       <div
         id="contact-form"
-        className="max-w-6xl mx-auto mt-24 grid md:grid-cols-2 gap-12 px-2 md:px-0"
+        className="max-w-6xl mx-auto mt-24 grid md:grid-cols-2 gap-12 px-2 md:px-0 "
       >
         <div className="animate-fadeIn3D">
           <h2 className="text-3xl font-bold text-primary-green mb-6 ">
