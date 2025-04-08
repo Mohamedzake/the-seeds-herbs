@@ -16,7 +16,7 @@ const ContactForm = () => {
         id="contact-form"
         className="max-w-6xl mx-auto mt-24 grid md:grid-cols-2 gap-12 px-2 md:px-0"
       >
-        <div>
+        <div className="animate-fadeIn3D">
           <h2 className="text-3xl font-bold text-primary-green mb-6 ">
             Send us a message
           </h2>
@@ -61,7 +61,7 @@ const ContactForm = () => {
           </form>
         </div>
 
-        <div className="bg-[#F7F9F7] p-8 rounded shadow">
+        <div className="bg-[#F7F9F7] p-8 rounded shadow animate-fadeIn3D">
           <h3 className="text-2xl font-bold text-[#3C5C31] mb-4">Email</h3>
           <p className="mb-6 text-black">
             <a href="mailto:connect@gizaseeds.com" className="underline">
