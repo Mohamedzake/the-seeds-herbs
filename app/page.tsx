@@ -1,4 +1,9 @@
+import { AboutSection } from "@/components/AboutSection";
 import ContactUs from "@/components/ContactUs";
+
+import ProductsSection from "@/components/ProductsSection";
+import ProductsSection1 from "@/components/ProductsSection1";
+import ProductsSection2 from "@/components/ProductsSection2";
 import React from "react";
 
 export default function Page() {
@@ -16,6 +21,10 @@ export default function Page() {
           </div>
         </div>
       </div>
+      {/* <ProductsSection1 />
+      <ProductsSection2 /> */}
+      <ProductsSection />
+      <AboutSection />
       <ContactUs />
     </section>
   );

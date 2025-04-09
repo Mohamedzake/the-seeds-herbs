@@ -49,6 +49,18 @@ const config: Config = {
         "2.5xs": "0.783rem",
       },
       colors: {
+        amber: {
+          50: "#fffbeb",
+          100: "#fef3c7",
+          200: "#fde68a",
+          300: "#fcd34d",
+          400: "#fbbf24",
+          500: "#f59e0b",
+          600: "#d97706",
+          700: "#b45309",
+          800: "#92400e",
+          900: "#78350f",
+        },
         // "dim-grey": "#4b5563",
         // "dark-olive-green": "#47723e",
         // "sea-green": "#5c9451",
@@ -57,7 +69,7 @@ const config: Config = {
         // grey: "#939393",
         // "back-title": "#b9cab966",
         green: "#224a15",
-        // green: "#059669",
+        green2: "#059669",
         primary: {
           blue: "#232773",
           green: "#224a15",
