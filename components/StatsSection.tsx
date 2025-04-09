@@ -47,7 +47,7 @@ export default function StatsSection() {
         {stats.map((stat, index) => (
           <div
             key={index}
-            className="bg-gray-50 text-primary-green rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition-shadow duration-300"
+            className="bg-gray-50 animate-fadeIn3D text-primary-green rounded-2xl shadow-md p-6 flex flex-col items-center hover:shadow-lg transition-shadow duration-300"
           >
             {stat.icon}
             <h3 className="text-2xl font-bold text-gray-800 mt-4">
