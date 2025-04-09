@@ -328,7 +328,9 @@ export default function Header() {
                     className={`px-3 py-2 text-sm font-medium transition-colors ${
                       currentPath === item.href
                         ? "text-emerald-600"
-                        : "text-gray-700 hover:text-emerald-600"
+                        : `text-gray-700 ${
+                            item.isButton ? "" : "hover:text-emerald-600"
+                          }`
                     } ${
                       item.isButton &&
                       "bg-emerald-600 text-white px-6 py-2.5 rounded-full hover:bg-emerald-700 ml-4"
