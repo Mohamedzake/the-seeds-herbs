@@ -2,8 +2,7 @@ import { AboutSection } from "@/components/AboutSection";
 import ContactUs from "@/components/ContactUs";
 
 import ProductsSection from "@/components/ProductsSection";
-import ProductsSection1 from "@/components/ProductsSection1";
-import ProductsSection2 from "@/components/ProductsSection2";
+
 import StatsSection from "@/components/StatsSection";
 import React from "react";
 
@@ -21,10 +20,9 @@ export default function Page() {
             </h2>
           </div>
         </div>
-      </div>{" "}
+      </div>
       <StatsSection />
-      {/* <ProductsSection1 />
-      <ProductsSection2 /> */}
+
       <ProductsSection />
       <AboutSection />
       <ContactUs />

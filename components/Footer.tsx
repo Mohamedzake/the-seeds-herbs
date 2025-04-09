@@ -69,7 +69,7 @@ import { FaWhatsapp, FaInstagram, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
     // bg-[#224a15]
-    <footer className="bg-[#224a15] text-white py-10 px-6 md:px-16">
+    <footer className="bg-[#059669] text-white py-10 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         <div className="col-span-1">
           <h2 className="text-2xl font-bold mb-2 flex items-center gap-1">
