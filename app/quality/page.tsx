@@ -11,7 +11,8 @@ export default function Page() {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-snug">
               Quality
             </h1>
-          </div>
+          </div>{" "}
+          <div className="absolute inset-0 bg-black/15 z-0" />
         </div>
       </div>
       <GreetQuality />

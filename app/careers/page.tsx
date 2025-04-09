@@ -13,9 +13,10 @@ export default function Page() {
             <h2 className="text-left text-xs sm:text-sm md:text-base lg:text-lg max-w-xl">
               Giza has been a global market leader for more than 90 years
             </h2>
-          </div>
+          </div>{" "}
+          <div className="absolute inset-0 bg-black/15 z-0" />
         </div>
-      </div>{" "}
+      </div>
       <ContactUs />
     </section>
   );

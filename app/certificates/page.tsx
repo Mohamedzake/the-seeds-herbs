@@ -12,6 +12,7 @@ export default function Page() {
               Certifications
             </h1>
           </div>
+          <div className="absolute inset-0 bg-black/15 z-0" />
         </div>
       </div>
       <Certifications />
