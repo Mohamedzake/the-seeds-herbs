@@ -102,29 +102,6 @@ export const AboutSection = () => {
             </div>
           </div>
         </div>
-
-        {/* Stats Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-6">
-          {[
-            { number: "30+", label: "Countries Served" },
-            { number: "100+", label: "Global Clients" },
-            { number: "300+", label: "Product Variants" },
-            { number: "10k+", label: "Tons Annual Output" },
-            { number: "250+", label: "Quality Experts" },
-          ].map((stat) => (
-            <div
-              key={stat.label}
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-amber-50"
-            >
-              <p className="text-4xl font-bold text-amber-700 mb-2">
-                {stat.number}
-              </p>
-              <p className="text-sm font-semibold text-amber-600/90">
-                {stat.label}
-              </p>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

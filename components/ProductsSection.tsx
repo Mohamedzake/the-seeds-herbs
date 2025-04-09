@@ -53,7 +53,7 @@ const ProductsSection1 = () => {
     },
   ];
   return (
-    <section className="py-24 bg-gray-50">
+    <section className="py-24 bg-gray-50 animate-fadeIn3D">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4 font-serif">
