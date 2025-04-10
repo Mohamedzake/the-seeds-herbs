@@ -95,8 +95,8 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <section className="px-4 py-16 bg-gradient-to-br from-[#e8f5e9] to-white text-green animate-fadeIn3D">
-      <div className="max-w-6xl mx-auto text-center">
+    <section className="px-4 py-16 bg-gradient-to-br from-[#e8f5e9] to-white text-green">
+      <div className="max-w-6xl mx-auto text-center animate-fadeIn3D">
         <h2 className="text-4xl font-bold mb-4 text-green">
           Welcome to Giza Seeds 🌱
         </h2>
