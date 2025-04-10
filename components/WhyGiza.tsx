@@ -184,7 +184,7 @@ const tapScale = { scale: 0.98 };
 
 export const WhyGiza = () => {
   return (
-    <section className="bg-stone-50 py-20 lg:py-28">
+    <section className="bg-stone-100 py-20 lg:py-28 border-t-2 border-b-2 border-stone-200">
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Main Heading */}
         <motion.div
