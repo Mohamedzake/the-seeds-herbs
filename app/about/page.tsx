@@ -1,5 +1,6 @@
 import ContactUs from "@/components/ContactUs";
 import OurStory from "@/components/OurStory";
+import { TeamSection } from "@/components/TeamSection";
 import { WhyGiza } from "@/components/WhyGiza";
 import React from "react";
 
@@ -18,6 +19,7 @@ export default function Page() {
       </div>
       <OurStory />
       <WhyGiza />
+      <TeamSection />
       <ContactUs />
     </section>
   );
