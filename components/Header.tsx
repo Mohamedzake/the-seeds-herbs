@@ -212,7 +212,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import logo from "@/public/logo.svg";
+import logo from "@/public/logo-1.png";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -268,15 +268,17 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          {/* <Link href="/" className="flex-shrink-0">
             <Image
               src={logo}
               alt="Logo"
               className="h-10 w-auto sm:h-12"
               priority
             />
+          </Link> */}
+          <Link href="/" className="flex-shrink-0">
+            <Image src={logo} alt="Logo" className="h-20 w-20 " priority />
           </Link>
-
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-4">
             {menuItems.map((item) => (
