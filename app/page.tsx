@@ -13,12 +13,9 @@ export default function Page() {
         <div className="flex flex-col justify-center items-start h-full text-left">
           <div className="text-white flex flex-col items-start gap-y-4 px-4 pr-16 md:px-6 md:pr-24 lg:px-8 lg:pr-32 xl:px-10 xl:pr-40 w-full max-w-[1200px] mx-auto animate-fadeIn3D">
             <h1 className="text-left text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold leading-snug drop-shadow-md">
-<<<<<<< HEAD
-              Crafting Spice Excellence Since 19351
-=======
               Crafting Spice Excellence Since 1935
->>>>>>> 714f6b2a59a61e6ee6bfa8fc8f6458d586ad7cf8
             </h1>
+
             <h2 className="text-left text-xs sm:text-sm md:text-base lg:text-lg max-w-2xl text-white/90">
               As Egypt’s leading spice exporter, Giza blends ancient
               craftsmanship with modern food safety innovation — delivering over
